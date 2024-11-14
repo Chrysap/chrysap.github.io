@@ -1,0 +1,375 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+html {
+    font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: #333;
+    min-height: 100dvh;
+    width: 100dvw;
+    max-width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    font-weight: 500;
+}
+
+body>section>h1 {
+    padding: 2rem;
+    font-size: calc(1rem + 1.8vw);
+    font-weight: 500;
+}
+
+body>section>h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://uniliv.gr/wp-content/uploads/2024/05/for-site-smaller.jpg') no-repeat center center/cover;
+    height: max(30vh, 640px);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.hero h1 {
+    color: #333;
+    font-size: calc(1.5rem + 1vw);
+}
+
+.hero p {
+    color: #666;
+    font-size: calc(0.5rem + 1vw);
+}
+
+.benefits {
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits h1 {
+    color: #d8d8d8;
+    font-size: calc(1.5rem + 1vw);
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem;
+    width: min(100%, 1024px);
+    color: white;
+}
+
+.benefits-content section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.benefits-content section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.benefits-content section p {
+    margin: 1rem;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logos {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.partner-logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 64px;
+}
+
+.examples {
+    background-color: #c9b271;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 10vw;
+}
+
+.examples-content {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.examples-content section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.examples-content section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.socials {
+    padding-bottom: 1rem;
+    background-color: #54595f;
+    color: white;
+}
+
+.socials ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials img {
+    height: 48px;
+    width: auto;
+}
+
+.socials img.icon {
+    /* to turn the svgs white */
+    filter: saturate(0) brightness(100) invert(100%);
+}
+
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-content {
+    columns: 2 auto;
+    max-width: 1140px;
+}
+
+.reviews-content p {
+    margin: 1rem;
+    font-weight: 200;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.reviewer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.reviewer h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.reviewer h4 {
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.reviewer img {
+    height: 48px;
+    width: auto;
+    object-fit: cover;
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    height: 660px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: all 0.75s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.navigation-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    display: flex;
+    gap: 8px;
+    transform: translateX(-50%);
+}
+
+.navigation-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigation-dots .dot.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Footer */
+footer {
+    background-color: #232323;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2rem;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
+    .examples {
+        padding: 1rem 5vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        background: url('https://uniliv.gr/wp-content/uploads/2024/05/for-site-smaller.jpg') no-repeat bottom center/cover;
+        height: max(30vh, 512px);
+    }
+
+    .partner-logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .examples {
+        padding: 1rem 0;
+    }
+
+    .examples-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-content {
+        columns: 1 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero-content {
+        background-color: white;
+    }
+
+    .benefits-content {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-logos {
+        grid-template-columns: 1fr;
+    }
+
+    .examples-content {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
