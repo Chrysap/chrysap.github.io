@@ -346,14 +346,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        height: 100%;
-    }
-
-    .hero-content {
-        background-color: white;
-    }
-
     .benefits-content {
         grid-template-columns: 1fr;
     }
