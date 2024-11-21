@@ -245,8 +245,8 @@ body>section>h3 {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 720px;
-    height: 660px;
+    max-width: 1140px;
+    height: 720px;
     overflow: hidden;
 }
 
