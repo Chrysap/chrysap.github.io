@@ -6,21 +6,21 @@
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu/UFL.txt") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format('truetype');
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu/UFL.txt") format('truetype');
     font-weight: 100 900;
     font-style: italic;
 }
 
 html {
-    font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    font-family: 'Ubuntu', 'Trebuchet MS', sans-serif;
     background-color: white;
     color: #333;
     min-height: 100dvh;
