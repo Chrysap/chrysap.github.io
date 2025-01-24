@@ -7,14 +7,14 @@
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("fonts/Ubuntu/UFL.txt") format('truetype');
+    src: url("fonts/Ubuntu.ttf") format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("fonts/Ubuntu/UFL.txt") format('truetype');
+    src: url("fonts/Ubuntu.ttf") format('truetype');
     font-weight: 100 900;
     font-style: italic;
 }
