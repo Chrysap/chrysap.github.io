@@ -324,7 +324,7 @@ footer {
 
 @media (max-width: 1024px) {
     .hero {
-        background: url('https://uniliv.gr/wp-content/uploads/2024/05/for-site-smaller.jpg') no-repeat bottom center/cover;
+        background: url('images/banner.jpg') no-repeat bottom center/cover;
         height: max(30vh, 512px);
     }
 
