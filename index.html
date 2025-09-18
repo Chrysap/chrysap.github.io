@@ -25,6 +25,7 @@
     <meta name="description" content="Αποτυπώστε κάθε σημαντική στιγμή με Visual Notetaking! Για events που εντυπωσιάζουν και ξεχωρίζουν.">
     <meta name="keywords" content="Visual Notetaking, Graphic Recording, Chrysa Petala, Xrysa Petala">
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
     <!-- opengraph tags -->
     <meta property="og:title" content="Visual Notetaking" />
@@ -84,9 +85,13 @@
     </section>
     
     <!-- Calendly link widget begin -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/xrysa-i-petala/30min'});return false;"> <h1>Πείτε μας για το επόμενό σας project</h1></a>
+   
+    <div class="calendly-div">
+      <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/xrysa-i-petala/30min'});return false;">
+        Πείτε μας για το επόμενό σας project
+      </button>
+    </div>
+
     <!-- Calendly link widget end -->
 
     <!-- partners -->
@@ -288,21 +293,24 @@
     <!-- contact us -->
     <section class="contact">
 
-    <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/xrysa-i-petala/30min'});return false;"> <h1>Πείτε μας για το επόμενό σας project</h1></a>
-<!-- Calendly link widget end -->
+    <div class="calendly-div">
+      <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/xrysa-i-petala/30min'});return false;">
+        Πείτε μας για το επόμενό σας project
+      </button>
+    </div>
 
-<h3>📧 xrysa.i.petala@gmail.com | 📞 6975697974</h3>
-</section>
+    <h3>📧 xrysa.i.petala@gmail.com | 📞 6975697974</h3>
+    </section>
 
     <!-- Footer -->
     <footer>
       <p>&copy; <span id="year"></span> Chrysa Petala. All rights reserved.</p>
+      <a href="/terms-and-conditions.html">Terms and Conditions</a>
     </footer>
   </body>
 </html>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -380,7 +388,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+
+  gtag('js', new Date());
   gtag('config', 'G-9JVM2VCTP4');
 </script>
